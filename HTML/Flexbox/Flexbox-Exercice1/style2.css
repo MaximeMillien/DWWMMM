@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    padding: 200px;
+}
+.item-flex{
+    background-color: red;
+    padding: 100px;
+    margin: 50px;
+}

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container1 {
+  background-color: yellow;
+}
+.container1 h2 {
+  font-size: 35px;
+  color: #680468;
+}
+.container1 p {
+  font-size: 25px;
+}
+.container1 p:nth-of-type(1) {
+  color: cornflowerblue;
+}
+.container1 p:nth-of-type(2) {
+  color: blue;
+}
+.container1 p:nth-of-type(2) span {
+  color: grey;
+}
+.container1 p:nth-of-type(3) {
+  color: black;
+}
+.container1 p:nth-of-type(4) {
+  color: green;
+}

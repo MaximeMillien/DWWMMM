@@ -1,0 +1,15 @@
+body {
+    background-color: #000;
+    margin-left: 100px;
+}
+P{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 15pt;
+    letter-spacing: 0.5mm;
+    font-family: 'Crafty Girls', cursive;
+}
+h1{
+    color:blue;
+    padding-left: 500px
+}

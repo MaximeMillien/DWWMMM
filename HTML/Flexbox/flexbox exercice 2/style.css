@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.container{
+    background-color: cornflowerblue;
+    height: 2000px;
+    width: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+}
+.a1{
+    background-color: orange;
+    height: 300px;
+    width: 1700px;
+    margin: auto;
+    border: solid 1px red;
+}
+.a2{
+    background-color: gray;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+}
+.a3{
+    background-color: yellow;
+    height: 500px;
+    width: 1100px;
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+.a4{
+    background-color: green;
+    height: 500px;
+    width: 1700px;
+    margin: auto;
+}
