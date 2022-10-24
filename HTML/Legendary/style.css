@@ -94,12 +94,14 @@ p.para4{
     text-align: left;
 }
 footer{
-    background-color: black;
-    font-size: large;
-    margin-top: 100px;
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 960px;
-    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding-left: 50px;
 }
 p.para5{
     font-size: 20px;
@@ -141,4 +143,8 @@ span{
     .h5{
         height: 300px;
     }
+}
+
+@media screen and (max-width:360px);{
+    
 }
