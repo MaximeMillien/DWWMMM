@@ -3,13 +3,12 @@
 $tab = [];
 $sum = 0;
 
-for ($i = 0 ; $i < 9; $i++){
-        $tab = readline ("notes : ");
-        array ($tab) ;
-            echo ("La moyenne est de : " . $tab);
-
+for ($i = 0 ; $i < 5; $i++){
+        $notes = readline ("notes : ");
+         array_sum ($tab) ;
+          
     }
-    echo ("La moyenne est de : " . $sum );
+    echo ("La moyenne est de : " . $tab );
 
 
 
@@ -17,7 +16,6 @@ for ($i = 0 ; $i < 9; $i++){
 
 
 // $notes = [];
-
 // for ($i = 1; $i <= 9 ;$i++){ 
 //     $saisie = readline ("notes : ");
 //     $notes [$i] = $i + 1;
