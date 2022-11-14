@@ -1,26 +1,28 @@
 <?php
 
-$tab = [[8,15,56,84,129,-7,-3,89,14,50,32,14],[12,54,53,45,13,74,36,7,2,-8,73,-50],[8,15,56,84,129,-7,-3,89,14,50,32,14],[12,54,53,45,13,74,36,7,2,-8,73,-50],[8,15,56,84,129,-7,-3,89,14,50,32,14],[12,54,53,45,13,74,36,7,2,-8,73,-50],[8,15,56,84,129,-7,-3,89,14,50,32,14],[12,54,53,45,13,74,36,7,2,-8,73,-50]] ;
+$tab = array() ;
+$saisieLigne = readline("entrez un nombre de lignes : ") ;
+$saisieCol = readline("entrez le nombre de colonnes : ") ;
 $max = 0 ;
-$nombre = 0 ;
 
-for ($i=1;$i<=12;$i++){
+for($i=0;$i<=$saisieLigne;$i++){
 
-    for ($j=1;$j<=8;$j++){
-  
-        $tab[$i][$j] ;
-        echo $tab[$i][$j] . "      ";
+    for ($j=0;$j<=$saisieCol;$j++){
+ if($nombre>$max){
+            $max = $nombre ;
+            $jmax = $j ; 
+            $imax = $i ;
+        }
+        $tab[$i][$j] = $nombre = rand(1,959);
+        echo $tab[$i][$j] . "  ";
 
     }
-//     if ($nombre>$max){
-//         $max= $nombre ;
-//         $jmax = $j ;
-//         $imax = $i ;
-//   }
 
-    echo "\n";
+    echo "\n" ;
 }
-// echo "La plus grande valeur est :" . $max . "située ligne :" . $imax . "à la colonne :" . $jmax . "\n";
+
+    echo $max . " de position : ". $imax ."-" . $jmax ;
+
 
 
   
