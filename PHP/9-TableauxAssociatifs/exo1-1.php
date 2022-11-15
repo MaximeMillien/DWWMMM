@@ -4,6 +4,6 @@ $chomage = array("Autriche" => 4.9 , "Allemagne" =>9.3 , "Danemark" =>4.8 , "Esp
 
 
 foreach ($chomage as $pays => $value){
-    echo "Le chômage en " . $pays . "est de " . $value ."\n";
+    echo "Le chômage en " . $pays . " est de " . $value ."\n";
 }
 ?>
