@@ -1,6 +1,11 @@
 <?php
 
 $tab = [15,11,9,4,8,10];
+$moyenne = 0;
+
+for ($i = 1 ; $i < 6 ; $i++){
+    $moyenne = $tab[$i]/ $tab[$i];
+}    echo "La moyenne est de " . $moyenne . "\n";
 
 
 
@@ -25,6 +30,5 @@ $tab = [15,11,9,4,8,10];
 //     }
 //     echo $min;
 //     echo "\n". $max;
-
 
 ?>

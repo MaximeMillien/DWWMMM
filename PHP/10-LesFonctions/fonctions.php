@@ -87,7 +87,6 @@ return;
 }
 
 function figure(){
-<<<<<<< HEAD
     $i = 1;
 while ($i<14){
     for ($j=0 ; $j < $i ; $j++){
@@ -98,8 +97,6 @@ while ($i<14){
     echo "\n";
     $i++;
 }
-=======
     
->>>>>>> ef723ee4909fc3c4af38a1f6d420fceb52bade92
 }
 ?>
