@@ -23,8 +23,11 @@ for($i=0;$i<=$saisieLigne;$i++){
 
     echo $max . " de position : ". $imax ."-" . $jmax ;
 
+<<<<<<< HEAD
+=======
 
 
   
 
+>>>>>>> ef723ee4909fc3c4af38a1f6d420fceb52bade92
 ?>
