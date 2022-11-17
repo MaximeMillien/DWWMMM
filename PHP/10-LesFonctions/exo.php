@@ -1,7 +1,7 @@
 <?php
 require ("fonctions.php");
+echo " 1.exo1\n 2.exo2\n 3.exo3\n 4.exo4\n 5.exo5\n 6.exo6\n 7.exo7" ."\n";
 $Menu = readline("Choisis un exo frero et fait vite !") ;
-echo "1.exo1\n2.exo2\n 3.exo3\n 4.exo4\n 5.exo5\n 6.exo6\n 7.exo7";
 
 echo "\n" ;
 
