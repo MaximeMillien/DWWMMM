@@ -10,6 +10,7 @@ echo "                          CALCUL SUR LE CERCLE                           "
 echo "                          ********************                            " ."\n";
 
 while ($calcul = true){
+    
     if ($oui){
     $rayon = readline ("Quel est le rayon du cercle : ");
     $calcul = 2 * $pi * $rayon;
