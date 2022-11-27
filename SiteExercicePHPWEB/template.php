@@ -50,7 +50,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Difficile</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Exercice 1</a>
+                            <a class="dropdown-item" href="exo1Difficile.php">Exercice 1</a>
                             <a class="dropdown-item" href="#">Exercice 2</a>
                             <a class="dropdown-item" href="#">Exercice 3</a>
                         </div>

@@ -49,12 +49,13 @@ $tabNotes = array(12,1,15,8);
 
 
 <!-- Question 4 -->
+
 <form action="" method="GET">
 <div class="container border border-dark">
 
-    <button type> Tous les animaux </button>
-    <button type="submit" nom="Chien"> Seulement les chiens </button>
-    <button> Seulement les chats </button>
+    <button type="submit" nom="tous"> Tous les animaux </button>
+    <button type="submit" nom="chien"> Seulement les chiens </button>
+    <button type="submit" nom="chat"> Seulement les chats </button>
 
 </div>
 </form>
@@ -62,15 +63,15 @@ $tabNotes = array(12,1,15,8);
 
 
 $tab = array(    
-    'Marie' => array("30", "Chien"),     
-    'Pierre' => array("32", "Chat"),    
-    'Riri' => array("28", "Chien"),    
-    'Fifi' => array("28", "Chat"), ); 
-if (isset($_GET["Chien"])) {     
+    'Marie' => array("10", "chien"),     
+    'Pierre' => array("12", "chat"),    
+    'Riri' => array("5", "chien"),    
+    'Fifi' => array("8", "chat"), ); 
+if (isset($_GET["chien"])) {     
     foreach ($tab as $key => $value){        
-         if ($value[1] == "Chien") {             ?> 
-         <h1>  <?= $key . $value[0]?></h1>
-         <?php                                
+        if ($value[1] == "chien") {  ?>
+        <h1>  <?php echo $key . $value[0]?></h1>
+        <?php                                
            } 
             } }
 ?>
