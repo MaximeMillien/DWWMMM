@@ -11,21 +11,26 @@ function personnes($identite){
 
 
 function afficherTableau($tabNotes){
-   echo " <br> " . $tabNotes;
+   echo "  " . $tabNotes;
 }
 
 function calculerMoyenne($moyenne){
-    $tabNotes = array(12,1,15,8);
-    $moyenne = array_sum ($tabNotes)/ count ($tabNotes);
-    echo " <br> La moyenne est de " . $moyenne;
-
-}
-
-function estTableauPair($tabNotes){
 $pair = null;
-    if ($tabNotes%2 == $pair){
+$Notes = array(13,13,13,13);
+$moyenne = array_sum ($Notes)/ count ($Notes);
+
+    if ($moyenne%2 == $pair)
+    echo "La moyenne est pair";
+    elseif ($moyenne%2 !== $pair){
+        echo "La moyenne est impair";
+    }
+} 
+
+function estTableauPair($moyenne){
+$pair = null;
+    if ($moyenne%2 == $pair){
         echo " <br> c'est pair ";
-    } elseif ($tabNotes%2 !== $pair) {
+    } elseif ($moyenne%2 !== $pair) {
         echo " c'est impair ";
     }
 }

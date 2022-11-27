@@ -36,12 +36,15 @@ array("nom" => "Fifi" , "Age" => "28" , "sexe" => "Femme")]
 
 <!-- Question 3 -->
 <?php
-$tabNotes = array(12,1,15,8);
+$tabNotes = array(13,13,13,13);
 ?> 
 
 <div class="container border border-dark">
     <label >Exo 3 : Fonctions et tableaux</label>
- <p><?php  for ($i = 0 ; $i < count($tabNotes) ; $i++) : afficherTableau($tabNotes[$i])  . estTableauPair ($tabNotes[$i]) . calculerMoyenne($tabNotes[$i]) ; endfor ?></p>
+ <p><?php  for ($i = 0 ; $i < count($tabNotes) ; $i++) : afficherTableau($tabNotes[$i])   ; endfor ?></p>
+ <p><?php for ($i = 0 ; $i < count($tabNotes) ; $i++) : estTableauPair ($tabNotes[$i]) ; endfor?></p>
+ <p><?php  for ($i = 0 ; $i < count($tabNotes) ; $i++) : calculerMoyenne($tabNotes[$i])  ; endfor ?></p>
+
 </div> 
 
 
