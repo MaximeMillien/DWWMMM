@@ -36,12 +36,29 @@ $personnage2->afficheAnimaux();
 $personnage3->afficheAnimaux();
 $personnage4->afficheAnimaux();
 
+$tab = [$personnage1, $personnage2 , $personnage3 , $personnage4];
+
 ?>
 
+<?php 
+    if (isset($_GET["Tous"])) {     
+    foreach ($tab as $animal) { ?> 
+    <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " " ?>     
+    --------------------------------------<?php } } 
 
+    if (isset($_GET["Chien"])) {    
+    foreach ($tab as $animal) { ?>      
+    <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " "?>     
+          
+    --------------------------------------<?php } }
 
+    if (isset($_GET["Chat"])) {    
+    foreach ($tab as $animal) {        ?> 
+    <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " "?>     
 
+    --------------------------------------<?php } }
 
+?>
 
 <?php 
 $content = ob_get_clean();

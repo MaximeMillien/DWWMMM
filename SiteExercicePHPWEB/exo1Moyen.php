@@ -63,27 +63,27 @@ $tabNotes = array(13,13,13,13);
     'Pierre' => array("11", "Chien"),     
     'Riri' => array("7", "Chien"),     
     'Fifi' => array("8", "Chat"), ); 
+    
     if (isset($_GET["Tous"])) {     
     foreach ($tab as $key => $value) { ?> 
-
-    <h1> Nom : <?= $key ?></h1><?php ?> <h1> 
-        Age : <?= $value[0] ?></h1><?php         ?> 
-        <h1> Race : <?= $value[1] ?></h1>        
-        --------------------------------------<?php } } 
-        if (isset($_GET["Chien"])) {    
-        foreach ($tab as $key => $value) {       
-        if ($value[1] == "Chien") { ?> 
-        <h1> Nom : <?= $key ?></h1><?php  ?> 
-        <h1> Age : <?= $value[0] ?></h1><?php ?> 
-        <h1> Race : <?= $value[1] ?></h1>            
-        --------------------------------------<?php } }}
-        if (isset($_GET["Chat"])) {    
-        foreach ($tab as $key => $value) {       
-        if ($value[1] == "Chat") { ?> 
-        <h1> Nom : <?= $key ?></h1><?php  ?> 
-        <h1> Age : <?= $value[0] ?></h1><?php ?> 
-        <h1> Race : <?= $value[1] ?></h1>            
-        --------------------------------------<?php } }} ?>
+    <h1> Nom : <?= $key ?></h1> <?php ?> <h1> 
+    Age : <?= $value[0] ?></h1> <?php         ?> 
+    <h1> Race : <?= $value[1] ?></h1>        
+    --------------------------------------<?php } } 
+    if (isset($_GET["Chien"])) {    
+    foreach ($tab as $key => $value) {       
+    if ($value[1] == "Chien") { ?> 
+    <h1> Nom : <?= $key ?></h1><?php  ?> 
+    <h1> Age : <?= $value[0] ?></h1><?php ?> 
+    <h1> Race : <?= $value[1] ?></h1>            
+    --------------------------------------<?php } }}
+    if (isset($_GET["Chat"])) {    
+    foreach ($tab as $key => $value) {       
+    if ($value[1] == "Chat") { ?> 
+    <h1> Nom : <?= $key ?></h1><?php  ?> 
+    <h1> Age : <?= $value[0] ?></h1><?php ?> 
+    <h1> Race : <?= $value[1] ?></h1>            
+    --------------------------------------<?php } }} ?>
 
 
 <?php

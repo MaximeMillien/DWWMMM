@@ -44,7 +44,8 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="exo1Moyen.php">Exercice 1</a>
                             <a class="dropdown-item" href="exo2MoyenPOO.php">Exercice 2</a>
-                            <a class="dropdown-item" href="#">Exercice 3</a>
+                            <a class="dropdown-item" href="exo3MoyenPOO.php">Exercice 3</a>
+                            <a class="dropdown-item" href="exo4MoyenPOO.php">Exercice 4</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
