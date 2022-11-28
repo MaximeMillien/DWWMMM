@@ -37,8 +37,21 @@ $pair = null;
 
 
 
-
-
+function test($tableau){
+  $taille = count($tableau);
+  for($i = 1; $i < $taille; $i++)
+  {
+    for($j = $taille-1; $j >= $i; $j--)
+    {
+      if($tableau[$j+1] > $tableau[$j])
+      {
+      $temp = $tableau[$j+1];
+      $tableau[$j+1] = $tableau[$j];
+      $tableau[$j] = $temp;
+      }
+    }
+  }
+}
 
 
 // function test($animaux){

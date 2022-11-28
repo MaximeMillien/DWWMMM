@@ -66,8 +66,8 @@ $tabNotes = array(13,13,13,13);
     
     if (isset($_GET["Tous"])) {     
     foreach ($tab as $key => $value) { ?> 
-    <h1> Nom : <?= $key ?></h1> <?php ?> <h1> 
-    Age : <?= $value[0] ?></h1> <?php         ?> 
+    <h1> Nom : <?= $key ?></h1> <?php ?> 
+    <h1> Age : <?= $value[0] ?></h1> <?php ?> 
     <h1> Race : <?= $value[1] ?></h1>        
     --------------------------------------<?php } } 
     if (isset($_GET["Chien"])) {    

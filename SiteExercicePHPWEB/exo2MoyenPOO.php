@@ -31,10 +31,10 @@ $personnage1 = new Personnage("Marie" , "15" , "Chat");
 $personnage2 = new Personnage("Pierre" , "11", "Chien");
 $personnage3 = new Personnage("Riri" , "7" , "Chien");
 $personnage4 = new Personnage("Fifi" , "8" , "Chat");
-$personnage1->afficheAnimaux();
-$personnage2->afficheAnimaux();
-$personnage3->afficheAnimaux();
-$personnage4->afficheAnimaux();
+// $personnage1->afficheAnimaux();
+// $personnage2->afficheAnimaux();
+// $personnage3->afficheAnimaux();
+// $personnage4->afficheAnimaux();
 
 $tab = [$personnage1, $personnage2 , $personnage3 , $personnage4];
 
@@ -42,18 +42,18 @@ $tab = [$personnage1, $personnage2 , $personnage3 , $personnage4];
 
 <?php 
     if (isset($_GET["Tous"])) {     
-    foreach ($tab as $animal) { ?> 
+    foreach ($tab as $animal) { ?>
     <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " " ?>     
     --------------------------------------<?php } } 
 
     if (isset($_GET["Chien"])) {    
-    foreach ($tab as $animal) { ?>      
+    foreach ($tab as $animal) { ?>
     <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " "?>     
           
     --------------------------------------<?php } }
 
     if (isset($_GET["Chat"])) {    
-    foreach ($tab as $animal) {        ?> 
+    foreach ($tab as $animal) { ?>
     <?php echo $animal->nom . " " . $animal->age . " " . $animal->animaux . " "?>     
 
     --------------------------------------<?php } }

@@ -24,13 +24,22 @@ class Employee{
     }
 }
 
-$employee1 = new Employee("Test" , "Maxime" , "dcefnjdncd" , "Cappelle-la-Grande" , "0123456789");
-$employee2 = new Employee("fff", "Jacques", "rue de la 3eme rue", "Dunkerque", "0606060606");
+$employee1 = new Employee("zzz" , "Maxime" , "dcefnjdncd" , "Cappelle-la-Grande" , "0123456789");
+$employee2 = new Employee("aaa", "Jacques", "rue de la 3eme rue", "Dunkerque", "0606060606");
 $employee1->afficherEmployee();
 $employee2->afficherEmployee();
 ?>
 
-<?php $tab = [$employee1 , $employee2] ?>
+<?php 
+$tab = array($employee1 , $employee2);
+
+sort($tab);
+
+foreach ($tab as $key => $value){
+    echo $tab  . "\n";
+}
+
+?>
 
 
 <?php
