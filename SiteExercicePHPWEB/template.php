@@ -22,9 +22,9 @@
                     </li>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <?php for ($i = 1; $i <= 10; $i++) : ?>
+                         <?php for ($i = 1; $i <= 10; $i++) : ?> 
                             <a class="dropdown-item" href="../../1-facile/exo<?=$i?>/exercice.php">exo<?= $i ?></a>
-                        <?php endfor; ?> -->
+                        <?php endfor; ?> 
                     </div>
 
                     <li class="nav-item">
@@ -43,7 +43,7 @@
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Moyen</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="exo1Moyen.php">Exercice 1</a>
-                            <a class="dropdown-item" href="#">Exercice 2</a>
+                            <a class="dropdown-item" href="exo2MoyenPOO.php">Exercice 2</a>
                             <a class="dropdown-item" href="#">Exercice 3</a>
                         </div>
                     </li>

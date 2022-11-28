@@ -53,34 +53,37 @@ $tabNotes = array(13,13,13,13);
 
 <!-- Question 4 -->
 
-<form action="" method="GET">
-<div class="container border border-dark">
+<form action="" method="GET">     
+<button type="submit" name="Tous">Tous les animaux</button>     
+<button type="submit" name="Chien">Tous les chiens</button>     
+<button type="submit" name="Chat">Tous les chats</button> 
+</form> 
 
-    <button type="submit" nom="tous"> Tous les animaux </button>
-    <button type="submit" nom="chien"> Seulement les chiens </button>
-    <button type="submit" nom="chat"> Seulement les chats </button>
+<?php $tab = array('Marie' => array("15", "Chat"), 
+    'Pierre' => array("11", "Chien"),     
+    'Riri' => array("7", "Chien"),     
+    'Fifi' => array("8", "Chat"), ); 
+    if (isset($_GET["Tous"])) {     
+    foreach ($tab as $key => $value) { ?> 
 
-</div>
-</form>
-<?php
-
-
-$tab = array(    
-    'Marie' => array("10", "chien"),     
-    'Pierre' => array("12", "chat"),    
-    'Riri' => array("5", "chien"),    
-    'Fifi' => array("8", "chat"), ); 
-if (isset($_GET["chien"])) {     
-    foreach ($tab as $key => $value){        
-        if ($value[1] == "chien") {  ?>
-        <h1>  <?php echo $key . $value[0]?></h1>
-        <?php                                
-           } 
-            } }
-?>
-
-
-
+    <h1> Nom : <?= $key ?></h1><?php ?> <h1> 
+        Age : <?= $value[0] ?></h1><?php         ?> 
+        <h1> Race : <?= $value[1] ?></h1>        
+        --------------------------------------<?php } } 
+        if (isset($_GET["Chien"])) {    
+        foreach ($tab as $key => $value) {       
+        if ($value[1] == "Chien") { ?> 
+        <h1> Nom : <?= $key ?></h1><?php  ?> 
+        <h1> Age : <?= $value[0] ?></h1><?php ?> 
+        <h1> Race : <?= $value[1] ?></h1>            
+        --------------------------------------<?php } }}
+        if (isset($_GET["Chat"])) {    
+        foreach ($tab as $key => $value) {       
+        if ($value[1] == "Chat") { ?> 
+        <h1> Nom : <?= $key ?></h1><?php  ?> 
+        <h1> Age : <?= $value[0] ?></h1><?php ?> 
+        <h1> Race : <?= $value[1] ?></h1>            
+        --------------------------------------<?php } }} ?>
 
 
 <?php
