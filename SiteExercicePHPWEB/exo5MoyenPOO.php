@@ -4,12 +4,6 @@ $titre = "getter et setter";
 ?>
 
 
-<form action="" method="GET">     
-<button type="submit" name="Tous">Tous les animaux</button>     
-<button type="submit" name="Chien">Tous les chiens</button>     
-<button type="submit" name="Chat">Tous les chats</button> 
-</form>
-
 <?php 
 class Animal{
     private $nom ;
@@ -58,20 +52,43 @@ $tabAnimaux = [$animal1, $animal2 , $animal3, $animal4];
 $animal1->setNom("Toto");
 $animal2->setAge("56");
 $animal2->setAnimaux("Chien");
-
-// affichage tableau animaux
-foreach($tabAnimaux as $value){
-    echo $value->getNom() . " ";
-    echo $value->getAge() . " ";
-    echo $value->getAnimaux() . " ";
-}
-
 ?>
 
-<?php 
-    if (isset($_GET["Chien"]));
-    foreach ($tabAnimaux as $key => $value);
+<form action="" method="GET">     
+<button type="submit" name="Tous">Tous les animaux</button>     
+<button type="submit" name="Chien">Tous les chiens</button>     
+<button type="submit" name="Chat">Tous les chats</button> 
+</form>
 
+<?php
+// affichage tableau animaux
+// foreach($tabAnimaux as $value){
+//     echo $value->getNom() . " ";
+//     echo $value->getAge() . " ";
+//     echo $value->getAnimaux() . "<br> ";
+// }
+?>
+
+
+
+<?php 
+    if (isset($_GET["Tous"])){
+    foreach ($tabAnimaux as $animal){
+        if ($animal->getNom() == "Chien" || "Chat"){
+        echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
+    }
+    }}
+    if (isset($_GET["Chien"])){
+    foreach ($tabAnimaux as $animal){
+        if ($animal->getNom() == "Chien"){
+        echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
+    } elseif (isset($_GET["Chat"])){
+    foreach ($tabAnimaux as $animal){
+        if ($animal->getNom() == "Chat"){
+        echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
+    }
+    }
+}}}
 ?>
 
 <?php

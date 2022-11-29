@@ -55,19 +55,17 @@ $tab = [$marque1 , $marque2 , $marque3 , $marque4];
     <button type="submit" name="btnmarque">Entrez</button>
 </form>
 
-<p>
+
 <?php
 if (isset($_GET["btnmarque"])){
     foreach ($tab as $marque){
         if ($marque->getMarque() == $_GET["marque"]){
-        echo $marque->getModel() . " ";
+        echo $marque->getMarque()  . " " . $marque->getModel()  . " " . $marque->getCouleur() . " " . $marque->getPortes() . " " . $marque->getElectrique() . " ";
     }
     }
 }
-
-
 ?>
-</p>
+
 
 
 <?php 
