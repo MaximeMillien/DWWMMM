@@ -4,14 +4,14 @@ $titre = "exercice 1 difficile";
 
 
 <form action="" method="GET">
-    <input type="text" class="btn btn-secondary" name="prénom">
-    <input type="text" class="btn btn-secondary" name="mot de passe">
+    <input type="email" class="btn btn-secondary" name="prénom">
+    <input type="pass" class="btn btn-secondary" name="mot de passe">
     <button type="submit" name="connexion">Connexion</button>
     <button type="submit" name="déconnexion">Déconnexion</button>
 </form>
 
 <?php $nom = "Maxime";
-$tab = array("Maxime" => "MMM");
+$tab = array("Maxime");
  ?>
 
 <div class="container border border-dark">

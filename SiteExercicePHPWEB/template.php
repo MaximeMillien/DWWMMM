@@ -46,6 +46,8 @@
                             <a class="dropdown-item" href="exo2MoyenPOO.php">Exercice 2</a>
                             <a class="dropdown-item" href="exo3MoyenPOO.php">Exercice 3</a>
                             <a class="dropdown-item" href="exo4MoyenPOO.php">Exercice 4</a>
+                            <a class="dropdown-item" href="exo5MoyenPOO.php">Exercice 5</a>
+                            <a class="dropdown-item" href="exo6MoyenPOO.php">Exercice 6</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
