@@ -33,8 +33,8 @@ class Stagiaire{
 ?>
 
 <form action="">
-    <button class="submit" name="CR7">CR7</button>
-    <button class="submit" name="LM30">LM30</button>
+    <button class="submit" name="CR7">Ronaldo</button>
+    <button class="submit" name="LM30">Messi</button>
 </form>
 
 <?php
@@ -50,6 +50,12 @@ if (isset($_GET["LM30"])){
     foreach ($tab as $value){
         foreach ($value as $notes){
             echo  "La moyenne de " . $notes->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
+        }
+    } if (isset($_GET["CR7"])){
+        foreach ($tab as $value){
+            foreach ($value as $notes){
+                echo  "La moyenne de " . $notes->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
+            }
         }
     }
 }

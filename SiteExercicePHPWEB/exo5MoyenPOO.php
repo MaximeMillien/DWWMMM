@@ -80,11 +80,12 @@ $animal2->setAnimaux("Chien");
     }}
     if (isset($_GET["Chien"])){
     foreach ($tabAnimaux as $animal){
-        if ($animal->getNom() == "Chien"){
+        if ($animal->getAnimaux() == "Chien"){
+            // var_dump($animal->getNom());
         echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
-    } elseif (isset($_GET["Chat"])){
+    } if (isset($_GET["Chat"])){
     foreach ($tabAnimaux as $animal){
-        if ($animal->getNom() == "Chat"){
+        if ($animal->getAnimaux() == "Chat"){
         echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
     }
     }
