@@ -26,6 +26,7 @@ $livre2 = new Livres("le chat botté" , "Altas" , "Charles Perrault" , "1967");
 $livre3 = new Livres("100 villes 100 blagues", "Larousse", "Jean-Marie Bigard", "2010");
 $livre4 = new Livres("Winnie l'ourson" , "Gallimard" , "Alan Alexander Milne",  "1926");
 
+$tab = [$livre1 , $livre2 , $livre3 , $livre4];
 ?>
 
 <form action="" method="POST">
@@ -36,7 +37,12 @@ $livre4 = new Livres("Winnie l'ourson" , "Gallimard" , "Alan Alexander Milne",  
     <button type="submit" name="submit">Appuyez ici</button>
 </form>
 
-<?php  ?>
+<?php 
+if (isset($_POST["submit"])){
+    foreach ($tab as $livre){
+    
+    }
+} ?>
 
 <?php
 $content = ob_get_clean();
