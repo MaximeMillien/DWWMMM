@@ -83,7 +83,8 @@ $animal2->setAnimaux("Chien");
         if ($animal->getAnimaux() == "Chien"){
             // var_dump($animal->getNom());
         echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";
-    } if (isset($_GET["Chat"])){
+    } 
+    if (isset($_GET["Chat"])){
     foreach ($tabAnimaux as $animal){
         if ($animal->getAnimaux() == "Chat"){
         echo $animal->getNom()  . " " . $animal->getAge()  . " " . $animal->getAnimaux() . " ";

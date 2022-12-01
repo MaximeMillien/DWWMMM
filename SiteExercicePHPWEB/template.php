@@ -51,6 +51,8 @@
                             <a class="dropdown-item" href="exo7MoyenPOO.php">Exercice 7</a>
                             <a class="dropdown-item" href="exo8Moyen.php">Exercice 8</a>
                             <a class="dropdown-item" href="exo9MoyenPOO.php">Exercice 9</a>
+                            <a class="dropdown-item" href="exoMaison.php">Exercice 10</a>
+                            <a class="dropdown-item" href="exoPlayerArme.php">Exercice 11</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

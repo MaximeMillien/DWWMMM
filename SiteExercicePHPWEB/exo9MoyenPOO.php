@@ -30,19 +30,18 @@ $tab = [$livre1 , $livre2 , $livre3 , $livre4];
 ?>
 
 <form action="" method="POST">
-    <label for="">Choisissez l'édition : </label>
     <input type="text" name="Edition">
-    <label for="">Choisissez l'année : </label>
     <input type="number" name="Date">
     <button type="submit" name="submit">Appuyez ici</button>
 </form>
 
 <?php 
-if (isset($_POST["submit"])){
-    foreach ($tab as $livre){
+// if (isset($_POST["submit"])){
+//     foreach ($tab as $livre){
     
-    }
-} ?>
+//     }
+// }
+?>
 
 <?php
 $content = ob_get_clean();

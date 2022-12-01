@@ -14,8 +14,8 @@ class Voiture{
     private $couleur;
     private $portes;
     // private $electrique;
-    public const ELECT = true;
-    public const PASELECT = false;
+    const ELECT = true;
+    const PASELECT = false;
 
 
     public function __construct($marque, $model, $couleur, $portes){
