@@ -35,7 +35,8 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="exo1Facile.php">Exercice 1</a>
                             <a class="dropdown-item" href="exo2Facile.php">Exercice 2</a>
-                            <a class="dropdown-item" href="#">Exercice 3</a>
+                            <a class="dropdown-item" href="exoBonus.php">Exercice 3 (bonus)</a>
+                            <a class="dropdown-item" href="exoBonus2.php">Exercice 4 (bonus)</a>
                         </div>
                     </li>
 

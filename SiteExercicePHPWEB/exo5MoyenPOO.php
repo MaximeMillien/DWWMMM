@@ -48,6 +48,7 @@ $animal4 = new Animal("Fifi" , 8 , "Chat");
 // $personnage2->afficheAnimaux();
 // $personnage3->afficheAnimaux();
 // $personnage4->afficheAnimaux();
+
 $tabAnimaux = [$animal1, $animal2 , $animal3, $animal4];
 $animal1->setNom("Toto");
 $animal2->setAge("56");

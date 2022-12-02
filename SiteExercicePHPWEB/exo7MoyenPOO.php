@@ -47,18 +47,25 @@ $max = max($tab);
 $min = min($tab);
 
 if (isset($_GET["LM30"])){
-    foreach ($tab as $value){
-        foreach ($value as $notes){
-            echo  "La moyenne de " . $notes->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
-        }
-    } if (isset($_GET["CR7"])){
-        foreach ($tab as $value){
-            foreach ($value as $notes){
-                echo  "La moyenne de " . $notes->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
-            }
-        }
+    echo $stagiaire1->getNom();
+    // foreach ($tab as $value){
+    // if ($value->getNom() === $_GET["LM30"]){
+    //     echo $stagiaire1->getNom();
+    //     // echo  "La moyenne de " . $value->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
+    //     // foreach ($value as $notes){
+           
+    //     // }
     }
-}
+    if (isset($_GET["CR7"])){
+        echo $stagiaire2->getNom();
+        // foreach ($tab as $value){
+        //     foreach ($value as $notes){
+        //         echo  "La moyenne de " . $notes->getNom() . "est de " . $moyenne . "La valeur max est de " . $max . "est la valeur min est de " . $min;
+        //     }
+        // }
+    }
+
+    
 
 // $tabNotes = [7,10,15,12,11,8,15];
 // echo "La moyenne est de $moyenne ." . " La valeur max est de $max . " . "La valeur min est de $min .";
