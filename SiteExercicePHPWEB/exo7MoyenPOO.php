@@ -41,13 +41,14 @@ class Stagiaire{
 $stagiaire1 = new Stagiaire("Messi" , [7,10,15,12,11,8,15]);
 $stagiaire2 = new Stagiaire("Ronaldo" , [11,15,10,9,8,11,20]);
 
+
 $tab = [$stagiaire1 , $stagiaire2];
 $moyenne = array_sum($tab) / count($tab) ;
 $max = max($tab);
 $min = min($tab);
 
 if (isset($_GET["LM30"])){
-    echo $stagiaire1->getNom();
+    echo $stagiaire1->getNom() . " La moyenne est de : " . $moyenne;
     // foreach ($tab as $value){
     // if ($value->getNom() === $_GET["LM30"]){
     //     echo $stagiaire1->getNom();

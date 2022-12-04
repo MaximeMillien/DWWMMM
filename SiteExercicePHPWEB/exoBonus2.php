@@ -4,7 +4,7 @@ $titre = "exo bonus 2 formulaire";
 
 <form action="" method="GET">
     <button class="submit" name="Tous">Tous les animaux</button>
-    <button class="submit" name="Chien">Seulement les chiens</button>
+    <button class="submit" name="dog">Seulement les chiens</button>
     <button class="submit" name="Chat">Seulement les chats</button>
 </form>
 
@@ -37,16 +37,31 @@ class Animal{
     public function setAnimaux($animaux){
         $this->animaux = $animaux;
     }
+
+    // function afficherAnimaux(){
+    //     echo "Le nom : " . $this->nom . " Age : " . $this->age . " le type : " . $this->animaux;
+    // }
 }
 
-$animal1 = new Animal("Marie" , 15 , "Chat");
-$animal2 = new Animal("Pierre" , 11, "Chien");
-$animal3 = new Animal("Riri" , 7 , "Chien");
-$animal4 = new Animal("Fifi" , 8 , "Chat");
+$animal1 = new Animal("Marie " , 15 , "Chat");
+$animal2 = new Animal("Pierre " , 11, "Chien");
+$animal3 = new Animal("Riri " , 7 , "Chien");
+$animal4 = new Animal("Fifi " , 8 , "Chat");
+// $animal1->afficherAnimaux();
+// $animal2->afficherAnimaux();
+// $animal3->afficherAnimaux();
+// $animal4->afficherAnimaux();
+
 $tab = [$animal1 , $animal2 , $animal3 , $animal4];
 
 if (isset($_GET["Tous"])){
-
+    echo $animal2->getNom(), $animal2->getAge() ,$animal2->getAnimaux() , "<br>" . $animal3->getNom(), $animal3->getAge() ,$animal3->getAnimaux() . "<br>", $animal1->getNom(), $animal1->getAge() ,$animal1->getAnimaux() , "<br>" . $animal4->getNom(), $animal4->getAge() ,$animal4->getAnimaux() ;
+}
+if (isset($_GET["dog"])){
+    echo $animal2->getNom(), $animal2->getAge() ,$animal2->getAnimaux() , "<br>" . $animal3->getNom(), $animal3->getAge() ,$animal3->getAnimaux() ;
+}
+if (isset($_GET["Chat"])){
+    echo $animal1->getNom(), $animal1->getAge() ,$animal1->getAnimaux() , "<br>" . $animal4->getNom(), $animal4->getAge() ,$animal4->getAnimaux() ;
 }
 ?>
 
