@@ -32,7 +32,7 @@ public function __toString(){
     return $this->job;
 }
 public function effectueSonJob(){
-    "Je suis " . $this->getPrenom() . $this->getNom() . ". Je suis " . $this->getJob() . " et je gagne " . $this->getSalaire() . "Mon numéro de sécurité sociale est le " . $this->getNumSecu(); 
+   echo "Je suis " . $this->getPrenom() . $this->getNom() . ". Je suis " . $this->getJob() . " et je gagne " . $this->getSalaire() . "Mon numéro de sécurité sociale est le " . $this->getNumSecu();
 }
 }
 ?>
