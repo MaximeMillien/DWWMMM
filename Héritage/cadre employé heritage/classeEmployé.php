@@ -26,7 +26,7 @@ class Employe{
     public function setJob($job){$this->job = $job;}
 
 public function __toString(){
-    $texte =  "Le cadre " . $this->prenom . " " . $this->nom . " possède le num de sécu : " .$this->numsecu . " occupe le poste de " . $this->job .  " et gagne un salaire de : " . $this->salaire ."\n";
+    $texte =  "L'employé " . $this->prenom . " " . $this->nom . " possède le num de sécu : " .$this->numsecu . " occupe le poste de " . $this->job .  " et gagne un salaire de : " . $this->salaire ."\n";
     return $texte;
 }
 public function effectueSonJob(){

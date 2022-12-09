@@ -10,7 +10,10 @@ $employe1->effectueSonJob(). $employe2->effectueSonJob() . $employe3->effectueSo
 
 echo $cadre1->__toString();
 
-$cadre1->Manage($cadre1 , $employe1 ,$employe2); 
+$cadre1->Manage($employe1,$employe2); 
 
-$salaire1->augmenteUnSalarie($employe1);
+$cadre1->Augmentation($employe1, 0.1) ;
+echo $employe1->__toString() ;
+$cadre1->Augmentation($employe3, 0.2) ;
+echo $employe3->__toString() ;
 ?>
