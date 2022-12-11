@@ -1,32 +1,11 @@
 <?php
+require "classeVoiture.php";
+$voiture1 = new Voiture("grise" , "Citroen" , "C4" , 100000 , "essence");
+$voiture2 = new Voiture("rouge" , "Renault" , "Kajdar" , 50000 , "Diesel"); 
 
-class Voiture{
-    private $couleur;
-    private $marque;
-    private $modele;
-    private $kilometres;
-    private $motorisation;
+echo $voiture1->__toString() ;
+echo $voiture2->__toString() ;
 
-    public function __construct($couleur , $marque , $modele , $kilometres , $motorisation){
-        $this->couleur = $couleur;
-        $this->marque = $marque;
-        $this->modele = $modele;
-        $this->kilometres = $kilometres;
-        $this->motorisation = $motorisation;
-    }
+echo "Le nouveau kilométrage est de " . $voiture1->Rouler($voiture1 , 9999) . " kilométres.";
 
-    public function getCouleur(){return $this->couleur;}
-    public function getMarque(){return $this->marque;}
-    public function getModele(){return $this->modele;}
-    public function getKilometres(){return $this->kilometres;}
-    public function getMotorisation(){return $this->motorisation;}
-
-    public function setCouleur(){return $this->couleur;}
-    public function setMarque(){return $this->marque;}
-    public function setModele(){return $this->modele;}
-    public function setKilometres(){return $this->kilometres;}
-    public function setMotorisation(){return $this->motorisation;}
-    
-
-}
 ?>
