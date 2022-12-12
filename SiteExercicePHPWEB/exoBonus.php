@@ -18,10 +18,10 @@ class Personnage{
         return $this->prenom;
     }
     public function setNom($nom ){
-        return $this->nom;
+        return $this->nom = $nom;
     }
     public function setPrenom($prenom){
-        return $this->prenom;
+        return $this->prenom = $prenom;
     }
 
 
