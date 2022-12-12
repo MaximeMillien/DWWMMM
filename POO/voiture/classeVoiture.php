@@ -21,11 +21,11 @@ class Voiture{
     public function getKilometres(){return $this->kilometres;}
     public function getMotorisation(){return $this->motorisation;}
 
-    public function setCouleur(){return $this->couleur;}
-    public function setMarque(){return $this->marque;}
-    public function setModele(){return $this->modele;}
-    public function setKilometres(){return $this->kilometres;}
-    public function setMotorisation(){return $this->motorisation;}
+    public function setCouleur($couleur){return $this->couleur =$couleur;}
+    public function setMarque($marque){return $this->marque =$marque;}
+    public function setModele($modele){return $this->modele =$modele;}
+    public function setKilometres($kilometres){return $this->kilometres = $kilometres;}
+    public function setMotorisation($motorisation){return $this->motorisation =$motorisation;}
     
    public function __toString(){
         $txt = "Cette voiture est une " . $this->modele ;
@@ -35,9 +35,14 @@ class Voiture{
         $txt .= " avec " . $this->kilometres. " Kilomètres ." . "\n";
         return $txt;
     }
-    public function Rouler($km , $kmsup){
-    $supplementaire = $km->setKilometres($km->getKilometres()+$kmsup) ;
-    return $supplementaire;
+    // public function Rouler($km , $kmsup){
+    // $supplementaire = $km->setKilometres($km->getKilometres()+$kmsup) ;
+    // return $supplementaire;
+    // }
+
+    public function Rouler($kmTrajet){
+        $this->kilometres = $this->kilometres + $kmTrajet;
+        echo $this->kilometres;
     }
 }
 ?>
