@@ -1,4 +1,4 @@
-<?php
+ <?php
 require "classePyramideBaseTriangle.php";
 require "classeSphere.php";
 require "classePave.php";
@@ -21,20 +21,27 @@ foreach ($triangles as $value){
 echo $value->afficherTriangle();
 }
 
-$cercle1 = new Cercle(5);
-$cercle2 = new Cercle(16);
-$cercle3 = new Cercle(554);
+$cercle1 = new Cercle(10, 5);
+$cercle2 = new Cercle(16 ,11 );
+$cercle3 = new Cercle(554,11);
 
 $cercles = [$cercle1 , $cercle2 , $cercle3];
 foreach ($cercles as $value){
 echo $value->AfficherCercle();
 }
 
-$pave1 = new Pave(5,4);
-$pave2 = new Pave(54,54);
-$pave3 = new Pave(10,20);
+$pave1 = new Pave(5,4,5);
+$pave2 = new Pave(54,54,12);
+$pave3 = new Pave(10,20,5);
 $paves = [$pave1 , $pave2 , $pave3];
 foreach ($paves as $value){
     echo $value->Afficher();
 }
-?>
+$pyramide1 = new Pyramide(12,12);
+$pyramide2 = new Pyramide(11,4655);
+$pyramide3 = new Pyramide(58458,2125);
+$pyramides = [$pyramide1 , $pyramide2 , $pyramide3];
+foreach ($pyramides as $value){
+    echo $value->Afficher();
+}
+?> 

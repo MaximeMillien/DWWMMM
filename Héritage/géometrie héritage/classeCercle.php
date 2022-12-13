@@ -2,29 +2,32 @@
 
 class Cercle{
     protected $diametre;
-    const PI = 3.14;
+    protected $rayon;
 
-    public function __construct($diametre ){
+    public function __construct($diametre , $rayon ){
         $this->diametre = $diametre;
+        $this->rayon = $rayon;
+
     }
 
     public function getDiametre(){return $this->diametre;}
     public function setDiametre($diametre){return $this->diametre = $diametre;}
 
 public function PerimetreCercle(){
-$perimetreDiametre = $this->diametre * $this->pi;
+$perimetreDiametre = $this->diametre * pi();
 return $perimetreDiametre;
 }
 
 public function AireCercle(){
-$aireCercle = $this->pi * $this->rayon * $this->rayon;
+$aireCercle = pi() * $this->rayon * $this->rayon;
 return $aireCercle;
 }
 
 public function AfficherCercle(){
     $txt = "Diametre : " . $this->diametre . "\n";
     $txt .= "Périmètre : " . $this->PerimetreCercle() . "\n";
-    $txt .= "Aire : " . $this->AireCercle();
+    $txt .= "Aire : " . $this->AireCercle() . "\n";
+    $txt .= "-----------" . "\n";
     return $txt;
 }
 }

@@ -3,6 +3,12 @@ require "classeRectangle.php";
 
 class Pave extends Rectangle{
 
+public function __construct($hauteur, $longueur , $largeur){
+    $this->hauteur = $hauteur;
+    $this->longueur = $longueur;
+    $this->largeur = $largeur;
+}
+
     public function getLongueur(){return $this->longueur;}
     public function getLargeur(){return $this->largeur;}
     public function getHauteur(){return $this->hauteur;}    
@@ -16,14 +22,14 @@ class Pave extends Rectangle{
         }
     
     public function Volume(){
-        $volume = ($this->longueur + $this->largeu * $this->hauteur) ;
+        $volume = ($this->longueur + $this->largeur * $this->hauteur) ;
         return $volume;   
     }
     public function Afficher(){
         $txt = "Périmètre : " . $this->Perimetre() . "\n";
         $txt .= "Volume : " . $this->Volume() . "\n";
+        $txt .= "-----------" . "\n";
         return $txt;
     }
 }
-
 ?>

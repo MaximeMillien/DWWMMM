@@ -10,8 +10,8 @@ class Sphere extends Cercle{
 
     }
     public function Afficher(){
-        $txt = "Périmètre : " . Perimetre() . "\n";
-        $txt .= "Volume : " . Volume() . "\n";
+        $txt = "Périmètre : " . $this->Perimetre() . "\n";
+        $txt .= "Volume : " . $this->Volume() . "\n";
         return $txt;
     }
 }
