@@ -1,6 +1,6 @@
 <?php
 
-require "Interface.php";
+
 
 class Humain implements SeDeplacer{
     protected $nom;

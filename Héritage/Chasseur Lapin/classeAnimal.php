@@ -1,5 +1,4 @@
 <?php
-require "Interface.php";
 
 class Animal implements SeDeplacer{
     protected $couleur;
