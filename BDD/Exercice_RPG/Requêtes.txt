@@ -1,0 +1,49 @@
+exo 1
+1) SELECT * FROM personnage;
+2) SELECT * FROM arme;
+3) SELECT nom , levelMin FROM arme;
+4) SELECT nom , surnom , level FROM personnage;
+5) SELECT nom AS pseudo , level AS niveau FROM personnage;
+6) SELECT libelle AS `Types d'armes du jeu` FROM typearme;
+
+exo 2
+1) SELECT COUNT(*) FROM arme;
+2) SELECT COUNT(*) FROM personnage;
+3) SELECT AVG(level) FROM personnage;
+4) SELECT SUM(baseForce) SommeForce , SUM(baseAgi) SommeAgi , SUM(baseIntel) SommeIntel FROM classe;
+5) SELECT MIN(levelMin) , MAX(levelMin) FROM arme;
+6) SELECT SUM(baseForce + baseAgi + baseIntel) FROM classe;
+
+exo 3 
+1) SELECT CONCAT(nom , ' ' , surnom) Identite FROM personnage;
+2) SELECT CONCAT( nom , ' ', baseForce , ' ' , baseAgi , ' ' , baseIntel) Afficher FROM classe;
+3) SELECT SUBSTRING(nom ,1,  6) FROM personnage;
+4) SELECT CONCAT(SUBSTRING(nom , 1, 5) ,' ', SUBSTRING(description , 1 , 20)) FROM classe;
+
+exo 4
+1) SELECT * FROM arme WHERE levelMin >= 5;
+2) SELECT * FROM arme WHERE degat < 25;
+3) SELECT nom , surnom FROM personnage WHERE level = 10;
+4) SELECT * FROM typearme WHERE estDistance = 1;
+
+exo 5 
+1) SELECT * FROM arme WHERE levelMin BETWEEN 4 AND 8;
+2) SELECT * FROM personnage WHERE idPersonnage < 3 AND level = 10;
+3) SELECT * FROM arme WHERE levelMin <=4 OR levelMin >= 8;
+4) SELECT * FROM arme WHERE idArme = 1 OR idArme = 2 OR degat >= 30;
+5) SELECT * FROM arme WHERE idArme <= 2 AND degat > 25 AND  degat < 40
+6) SELECT * FROM personnage WHERE level<>8 AND (level <6 OR level>7);
+7) SELECT COUNT(*) FROM personnage WHERE level <>10
+8) SELECT AVG(degat) FROM arme WHERE levelMin BETWEEN 3 AND 7;
+
+exo 6
+1) SELECT * FROM personnage WHERE nom LIKE 'l%';
+2) SELECT * FROM personnage WHERE nom LIKE "l%er";
+3) SELECT * FROM arme WHERE nom LIKE "%bois%";
+4) SELECT * FROM arme WHERE nom LIKE "A_B%";
+5) SELECT * FROM arme WHERE idArme IN(1,2,4,5,7);
+6) SELECT * FROM personnage WHERE idPersonnage IN(2,3,4,6) AND level = 10;
+7) SELECT * FROM personnage WHERE surnom IS NOT NULL;
+8) SELECT * FROM personnage WHERE surnom IS NULL;
+9) SELECT * FROM personnage LIMIT 3;
+10) SELECT * FROM personnage LIMIT 2 OFFSET 3;
