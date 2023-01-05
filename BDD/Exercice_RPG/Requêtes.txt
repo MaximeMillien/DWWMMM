@@ -16,7 +16,7 @@ exo 2
 
 exo 3 
 1) SELECT CONCAT(nom , ' ' , surnom) Identite FROM personnage;
-2) SELECT CONCAT( nom , ' ', baseForce , ' ' , baseAgi , ' ' , baseIntel) Afficher FROM classe;
+2) SELECT CONCAT(nom , ' ', baseForce , ' ' , baseAgi , ' ' , baseIntel) Afficher FROM classe;
 3) SELECT SUBSTRING(nom ,1,  6) FROM personnage;
 4) SELECT CONCAT(SUBSTRING(nom , 1, 5) ,' ', SUBSTRING(description , 1 , 20)) FROM classe;
 
@@ -47,3 +47,8 @@ exo 6
 8) SELECT * FROM personnage WHERE surnom IS NULL;
 9) SELECT * FROM personnage LIMIT 3;
 10) SELECT * FROM personnage LIMIT 2 OFFSET 3;
+
+Jointures
+exo 1
+1) SELECT * FROM personnage INNER JOIN classe ON personnage.idClasse = classe.idClasse;
+2) 
