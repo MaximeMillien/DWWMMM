@@ -55,7 +55,7 @@ exo 1
 
 exo 2 
 1) SELECT personnage.nom , classe.nom FROM personnage INNER JOIN classe ON personnage.idClasse = classe.idClasse;
-2) SELECT personnage.nom AS 'surnom' , classe.nom AS 'surnom' FROM personnage INNER JOIN classe ON personnage.idClasse = classe.idClasse;
+2) SELECT p.nom , c.nom FROM personnage p INNER JOIN classe c ON  p.idClasse = C.idClasse;
 3) SELECT * FROM personnage INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme;
 4) SELECT personnage.nom , arme.nom , levelMin , degat , libelle , estDistance FROM personnage INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme;
 
