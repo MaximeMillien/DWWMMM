@@ -59,3 +59,19 @@ exo 2
 3) SELECT * FROM personnage INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme;
 4) SELECT personnage.nom , arme.nom , levelMin , degat , libelle , estDistance FROM personnage INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme;
 
+exo 3 
+1) SELECT personnage.nom , personnage.level , arme.nom , arme.levelMin FROM personnage INNER JOIN arme ON personnage.idArmeUtilise = arme.idArme
+2) SELECT arme.nom, levelMin, degat, typearme.libelle FROM arme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme WHERE estDistance = false;
+3) SELECT p.nom, a.nom AS weapon, ta.libelle AS typearme FROM personnage p INNER JOIN dispose d ON p.idPersonnage = d.idPersonnage INNER JOIN arme a ON d.idArme = a.idArme INNER JOIN typearme ta ON ta.idTypeArme = a.idTypeArme WHERE p.idClasse = 1;
+
+exo 4
+1) SELECT personnage.idPersonnage , personnage.nom AS Perso , arme.nom , typearme.libelle FROM personnage INNER JOIN dispose ON personnage.idPersonnage INNER JOIN arme ON arme.idArme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme WHERE level = 10
+2) SELECT personnage.idPersonnage , personnage.nom , arme.nom ,typearme.libelle FROM personnage INNER JOIN dispose ON personnage.idPersonnage INNER JOIN arme ON arme.idArme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme WHERE level = 10 ORDER BY personnage.idPersonnage;
+3) SELECT AVG(degat) AS Moyenne FROM arme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme WHERE typearme.estDistance = true;
+4) SELECT * FROM personnage INNER JOIN dispose ON personnage.idPersonnage INNER JOIN arme ON arme.idArme INNER JOIN typearme ON arme.idTypeArme = typearme.idTypeArme WHERE typearme.libelle LIKE 'A%'
+
+exo 5
+1) SELECT * FROM typearme LEFT JOIN arme ON typearme.idTypeArme = arme.idTypeArme;
+2) SELECT * FROM arme RIGHT JOIN typearme ON arme.idTypeArme = typearme.idTypeArme;
+3) SELECT arme.nom , personnage.nom , arme.levelMin FROM arme LEFT JOIN personnage ON personnage.idArmeUtilise = arme.idArme ORDER BY LevelMin ASC
+4) SELECT arme.nom ,personnage.nom FROM personnage INNER JOIN dispose ON personnage.idPersonnage = dispose.idPersonnage RIGHT JOIN arme ON dispose.idArme = arme.idArme ORDER BY arme.nom ASC
