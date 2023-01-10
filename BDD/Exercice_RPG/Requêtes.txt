@@ -1,3 +1,4 @@
+Requêtes
 exo 1
 1) SELECT * FROM personnage;
 2) SELECT * FROM arme;
