@@ -1,0 +1,15 @@
+MVC sépare les parties du site (ou appli) en plusieurs morceaux
+modéle = partie des données
+Vue = partie affichage
+Contrêleur = partie "pilotage"
+
+architecture
+
+
+contrôleur au centre de l'architecture
+
+controllers : pour pilotage /assemblage des pages
+models : pour la récupération et la manipulation des données (classe/ accès à la BD)
+views : pour les parties de code permettant de faire l'affichage (template, affichage spécifiques, ...)
+Index va jouer le rôle de routeur , dirige la demande du client. Il doit "router" les demandes des utilisateurs, vers les pages corrrespondantes.
+Pour cela , le fichier va regarder les urls et choisir le bon canal.
