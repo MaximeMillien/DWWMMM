@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
 
-    <title>Document</title>
+    <title>Bibliothèque</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -26,7 +26,6 @@
     </div>
   </div>
 </nav>
-
 
 <div class="container">
     <h1 class="rounded border border-dark p-2 m-2 text-center text-white bg-info"><?php echo $titre ?></h1>

@@ -22,7 +22,7 @@ ob_start(); ?>
             <td class="align-middle"><?= $livres[$i]->getTitre() ?></td>
             <td class="align-middle"><?= $livres[$i]->getNbPages() ?></td>
             <td class="align-middle"><a href="" class="btn btn-warning">Modifier</a></td>
-            <td class=" align-middle"><a href="" class="btn btn-danger">Supprimer</a></td>
+            <td class="align-middle"><a href="" class="btn btn-danger">Supprimer</a></td>
             </td>
         </tr>
     <?php } ?>
